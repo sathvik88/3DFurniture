@@ -44,6 +44,7 @@ struct ContentView : View {
     }()
     
     var body: some View {
+        
         ZStack(alignment: .bottom){//Allows us to arrange view eliments in a depth maner. Stack views on top of each other
             ARViewContainer(modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
             
@@ -54,8 +55,16 @@ struct ContentView : View {
             }
         
         }
+        VStack{
+            Button("button"){
+                print("hello")
+                //arview.screenShot()
+            }
+        }
+        
     }
     
+        
 }
 
 
@@ -69,13 +78,14 @@ struct ARViewContainer: UIViewRepresentable {
         let arView = CustomARView(frame: .zero)
         arView.enableObjectRemoval()
         
-               
-        return arView
+        func screenShot(){
+            arView.snapshot(saveToHDR: false){ (image) in
+                let compressedImage = UIImage(
+                    data: (image?.pngData())!)
+                UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
+            }
+        }
         
-        
-    }
-    func makeNewUIView(context: Context) -> ARView{
-        let arView = CustomARView(frame: .zero)
         return arView
     }
     
@@ -107,6 +117,7 @@ struct ARViewContainer: UIViewRepresentable {
             }
         }
     }
+   
     
 }
 class CustomARView: ARView{
@@ -119,6 +130,7 @@ class CustomARView: ARView{
         focusSquare.delegate = self
         focusSquare.setAutoUpdate(to: true)
         self.setupARView()
+       
     }
     
     @objc required dynamic init?(coder decoder: NSCoder) {
@@ -137,6 +149,8 @@ class CustomARView: ARView{
         
         self.session.run(config)
     }
+        
+
 }
 extension CustomARView: FEDelegate{
     func toTrackingState() {
@@ -162,7 +176,7 @@ extension ARView{
             }
         }
     }
-
+    
 }
 
 

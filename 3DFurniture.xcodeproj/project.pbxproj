@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1CB3BD257624B500AB42D1 /* coffeTable.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C1CB3BC257624B500AB42D1 /* coffeTable.usdz */; };
+		2C1CB3C3257624D500AB42D1 /* glassTable.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C1CB3C2257624D500AB42D1 /* glassTable.usdz */; };
+		2C1CB3D3257629FE00AB42D1 /* officeChair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2C1CB3D2257629FE00AB42D1 /* officeChair.usdz */; };
 		2C6A34E72526319E00BD8DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A34E62526319E00BD8DE4 /* AppDelegate.swift */; };
 		2C6A34E92526319E00BD8DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A34E82526319E00BD8DE4 /* ContentView.swift */; };
 		2C6A34ED252631A100BD8DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A34EC252631A100BD8DE4 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1CB3BC257624B500AB42D1 /* coffeTable.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = coffeTable.usdz; sourceTree = "<group>"; };
+		2C1CB3C2257624D500AB42D1 /* glassTable.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = glassTable.usdz; sourceTree = "<group>"; };
+		2C1CB3D2257629FE00AB42D1 /* officeChair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = officeChair.usdz; sourceTree = "<group>"; };
 		2C6A34E32526319E00BD8DE4 /* 3DFurniture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DFurniture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6A34E62526319E00BD8DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C6A34E82526319E00BD8DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +172,9 @@
 		2C6A35192526331500BD8DE4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2C1CB3D2257629FE00AB42D1 /* officeChair.usdz */,
+				2C1CB3C2257624D500AB42D1 /* glassTable.usdz */,
+				2C1CB3BC257624B500AB42D1 /* coffeTable.usdz */,
 				2CF278FA256D87F6008DFE4A /* Old_sofa.usdz */,
 				2CF278F4256D8101008DFE4A /* 3DChair.usdz */,
 				2C6A351B2526335200BD8DE4 /* chair_swan.usdz */,
@@ -328,7 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF278FB256D87F7008DFE4A /* Old_sofa.usdz in Resources */,
+				2C1CB3C3257624D500AB42D1 /* glassTable.usdz in Resources */,
 				2C6A35212526335200BD8DE4 /* tv_retro.usdz in Resources */,
+				2C1CB3BD257624B500AB42D1 /* coffeTable.usdz in Resources */,
+				2C1CB3D3257629FE00AB42D1 /* officeChair.usdz in Resources */,
 				2C6A34F0252631A100BD8DE4 /* Preview Assets.xcassets in Resources */,
 				2C6A35202526335200BD8DE4 /* fender_stratocaster.usdz in Resources */,
 				2C6A351E2526335200BD8DE4 /* slide_stylized.usdz in Resources */,
